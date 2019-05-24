@@ -1,9 +1,9 @@
 
   <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dwptvy074/image/upload/v1558696980/banner_cocktail_et5zmo.jpg);">
-    <h1>Cocktails en Folie</h1>
+    <h1>CoCkTaiLs eN FoLiE !</h1>
   </div>
-
-<div class="container">
+ 
+<div class="container horizontal-center">
   <div class="cards">
     <% @cocktails.each do |cocktail| %>
       <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dwptvy074/image/upload/v1558696459/Ti-Punch_uanwdc.jpg)">
@@ -11,7 +11,9 @@
       </div>
     <% end %>
   </div>
-  <%= link_to "Ajouter un nouveau Cocktail", new_cocktail_path, class: "btn btn-primary" %>
+    <div class="row justify-content-center" style="margin-bottom: 20px">
+      <%= link_to "Ajouter un nouveau Cocktail", new_cocktail_path, class: "btn btn-primary"%>
+    </div>
 </div>
 
   

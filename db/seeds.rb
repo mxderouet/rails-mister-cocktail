@@ -10,7 +10,7 @@ url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
+Cocktail.destroy_all
 Ingredient.destroy_all
 
 ingredients_serialized = open(url).read

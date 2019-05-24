@@ -8,6 +8,6 @@
     <%= f.input :photo_cache, as: :hidden %>
 
     <%= f.button :submit, "Créer mon cocktail", class: "btn-primary" %>
-    <%= f.button :button, "Annuler", type: "reset", class: "btn-outline-secondary" %>
+    <%= link_to "Annuler", root_path, class: "btn btn-secondary" %>
   <% end %>
 </div>

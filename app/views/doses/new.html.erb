@@ -1,7 +1,11 @@
-<h1>Nouvel ingrédient</h1>
+<div class="banner-new text-center" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://res.cloudinary.com/dwptvy074/image/upload/v1558696980/banner_cocktail_et5zmo.jpg');"> 
+    <h1>Nouvel ingrédient</h1>
+</div>
 
-<%= simple_form_for [@cocktail, @dose] do |f| %>
-  <%= f.association :ingredient %>
-  <%= f.input :description %>
-  <%= f.submit "Ajouter ingrédient", class: 'btn btn-primary' %>
-<% end %>
+<div class="container formulaire horizontal-center">
+  <%= simple_form_for [@cocktail, @dose] do |f| %>
+    <%= f.association :ingredient %>
+    <%= f.input :description %>
+    <%= f.submit "Ajouter ingrédient", class: 'btn btn-primary' %>
+  <% end %>
+</div>

@@ -63,4 +63,4 @@ gem 'rails-controller-testing', group: [ :test ]
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'json', '~> 1.8', '>= 1.8.3'
 gem 'cloudinary', '~> 1.9.1'
-gem 'carrierwave', '~> 1.2'
+gem 'carrierwave', '~> 1.3'
